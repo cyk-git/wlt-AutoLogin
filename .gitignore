@@ -3,3 +3,4 @@ config1
 config2
 
 backup/
+rm.sh
