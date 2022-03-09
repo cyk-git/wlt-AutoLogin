@@ -57,4 +57,4 @@ stty echo
 #echo "rt=$retrytime"
 #echo "$stuid"
 #echo "$password"
-python3 wlt.py $username $PASSWORD -t $type
+python3 wlt.py -u $username -p $PASSWORD -t $type
