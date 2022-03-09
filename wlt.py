@@ -61,6 +61,7 @@ while(1):
         username=input("Please enter your wlt username:")
         password=getpass.getpass("(No echo on the screen) Please enter your password:")
 
+# 获取操作系统类型
 system_type=sys.platform
 if system_type == "linux":
     ping_cmd = "ping www.baidu.com -i 1 -w 3"
@@ -70,6 +71,7 @@ else:
     print("\033[1;31;43mUnknown system.\033[0m")
     exit()
 
+# 自动登录循环
 while 1:
     try:
         exit_code = os.system(ping_cmd)
